@@ -7,7 +7,7 @@ const App: React.FC = () => {
     <main className="relative min-h-[100dvh] w-full flex flex-col items-center justify-between py-6 px-4 md:px-8 lg:px-16 overflow-hidden bg-brand-navy bg-gradient-to-br from-[#0A1929] via-[#0f233a] to-[#050c14]">
       {/* Noise Texture Overlay */}
       <div className="absolute inset-0 pointer-events-none bg-noise z-0 mix-blend-overlay opacity-30"></div>
-      
+
       {/* Background Glow Effect */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brand-gold/5 rounded-full blur-[100px] pointer-events-none z-0"></div>
 
@@ -20,7 +20,15 @@ const App: React.FC = () => {
 
       {/* CENTER CONTENT */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center flex-grow w-full max-w-5xl gap-6 md:gap-10">
-        
+
+        {/* DATE TAG */}
+        <div className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-gold/10 border border-brand-gold/20 backdrop-blur-sm mb-2 animate-fade-in">
+          <span className="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
+          <span className="text-brand-gold font-sans font-bold text-xs md:text-sm uppercase tracking-[0.2em]">
+            Aula Ao Vivo • 09/02 às 20h
+          </span>
+        </div>
+
         {/* 2. HEADLINE */}
         <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-[1.1] font-bold text-balance drop-shadow-lg">
           EM UMA ÚNICA AULA VOU ENTREGAR O PLANO PARA VOCÊ{' '}
@@ -31,19 +39,19 @@ const App: React.FC = () => {
 
         {/* 3. SUB-HEADLINE */}
         <p className="font-sans text-sm sm:text-base md:text-xl lg:text-2xl text-brand-offwhite/80 max-w-3xl leading-relaxed text-balance">
-          Você vai sair com o MAPA, a ESTRATÉGIA DE TRÁFEGO e o ROTEIRO para atrair 
+          Você vai sair com o MAPA, a ESTRATÉGIA DE TRÁFEGO e o ROTEIRO para atrair
           pacientes particulares recorrentes, resgatando sua liberdade e sua dignidade profissional.
         </p>
 
         {/* ACTION AREA */}
         <div className="flex flex-col items-center gap-3 w-full mt-2 md:mt-4">
-          
+
           {/* 4. CTA BUTTON */}
           <CtaButton />
 
           {/* 5. PRICE ANCHOR */}
           <PriceAnchor />
-          
+
         </div>
       </div>
 
