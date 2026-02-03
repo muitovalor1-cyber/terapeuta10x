@@ -21,13 +21,6 @@ const App: React.FC = () => {
       {/* CENTER CONTENT */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center flex-grow w-full max-w-5xl gap-6 md:gap-10">
 
-        {/* DATE TAG */}
-        <div className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-gold/10 border border-brand-gold/20 backdrop-blur-sm mb-2 animate-fade-in">
-          <span className="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
-          <span className="text-brand-gold font-sans font-bold text-xs md:text-sm uppercase tracking-[0.2em]">
-            Aula Ao Vivo • 09/02 às 20h
-          </span>
-        </div>
 
         {/* 2. HEADLINE */}
         <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-[1.1] font-bold text-balance drop-shadow-lg">
